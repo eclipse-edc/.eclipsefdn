@@ -41,6 +41,12 @@ orgs.newOrg('eclipse-edc') {
     orgs.newOrgSecret('SWAGGERHUB_USER') {
       value: "********",
     },
+    orgs.newOrgSecret('ORG_GITHUB_BOT_USER'){
+      value: "pass:bots/technology.edc/???????"
+    }
+    orgs.newOrgSecret('ORG_GITHUB_BOT_TOKEN'){
+      value: "pass:bots/technology.edc/??????"
+    }
   ],
   _repositories+:: [
     orgs.newRepo('.github') {
