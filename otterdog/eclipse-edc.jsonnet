@@ -457,6 +457,29 @@ orgs.newOrg('eclipse-edc') {
         },
       ],
     },
+    orgs.newRepo('Technology-HuaweiCloud') {
+      allow_rebase_merge: false,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      has_discussions: true,
+      has_wiki: false,
+      squash_merge_commit_title: "PR_TITLE",
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+      secrets: [
+        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
+          value: "********",
+        },
+        orgs.newRepoSecret('EF_JENKINS_TOKEN') {
+          value: "********",
+        },
+        orgs.newRepoSecret('EF_JENKINS_USER') {
+          value: "********",
+        },
+      ],
+    },
     orgs.newRepo('Template-Basic') {
       allow_rebase_merge: false,
       allow_update_branch: false,
