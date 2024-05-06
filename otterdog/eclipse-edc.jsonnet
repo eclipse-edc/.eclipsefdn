@@ -468,14 +468,6 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "read",
       },
-      secrets: [
-        orgs.newRepoSecret('EF_JENKINS_TOKEN') {
-          value: "********",
-        },
-        orgs.newRepoSecret('EF_JENKINS_USER') {
-          value: "********",
-        },
-      ],
     },
     orgs.newRepo('Template-Basic') {
       allow_rebase_merge: false,
