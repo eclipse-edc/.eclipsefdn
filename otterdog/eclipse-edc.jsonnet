@@ -466,12 +466,9 @@ orgs.newOrg('eclipse-edc') {
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       workflows+: {
-        default_workflow_permissions: "write",
+        default_workflow_permissions: "read",
       },
       secrets: [
-        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "********",
-        },
         orgs.newRepoSecret('EF_JENKINS_TOKEN') {
           value: "********",
         },
