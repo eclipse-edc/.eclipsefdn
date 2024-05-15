@@ -157,7 +157,7 @@ orgs.newOrg('eclipse-edc') {
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
-        }
+        },
         orgs.newRepoSecret('GRADLE_PUBLISH_KEY') {
           value: "********",
         },
