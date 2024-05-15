@@ -377,7 +377,7 @@ orgs.newOrg('eclipse-edc') {
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
-        }
+        },
         orgs.newRepoSecret('PG_CONNECTION_STRING') {
           value: "********",
         },
