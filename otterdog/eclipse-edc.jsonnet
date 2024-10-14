@@ -87,6 +87,14 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+      environments: [
+        orgs.newEnvironment('github-pages') {
+          branch_policies+: [
+            "gh-pages"
+          ],
+          deployment_branch_policy: "selected",
+        },
+      ],
     },
     orgs.newRepo('DataDashboard') {
       allow_rebase_merge: false,
@@ -116,6 +124,14 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+      environments: [
+        orgs.newEnvironment('github-pages') {
+          branch_policies+: [
+            "gh-pages"
+          ],
+          deployment_branch_policy: "selected",
+        },
+      ],
     },
     orgs.newRepo('GradlePlugins') {
       allow_rebase_merge: false,
@@ -139,6 +155,14 @@ orgs.newOrg('eclipse-edc') {
           value: "********",
         },
       ],
+      environments: [
+        orgs.newEnvironment('github-pages') {
+          branch_policies+: [
+            "gh-pages"
+          ],
+          deployment_branch_policy: "selected",
+        },
+      ],
     },
     orgs.newRepo('IdentityHub') {
       allow_rebase_merge: false,
@@ -155,6 +179,14 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+      environments: [
+        orgs.newEnvironment('github-pages') {
+          branch_policies+: [
+            "gh-pages"
+          ],
+          deployment_branch_policy: "selected",
+        },
+      ],
     },
     orgs.newRepo('JenkinsPipelines') {
       archived: true,
@@ -278,6 +310,14 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+      environments: [
+        orgs.newEnvironment('github-pages') {
+          branch_policies+: [
+            "gh-pages"
+          ],
+          deployment_branch_policy: "selected",
+        },
+      ],
     },
     orgs.newRepo('Samples') {
       allow_rebase_merge: false,
@@ -304,6 +344,14 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+      environments: [
+        orgs.newEnvironment('github-pages') {
+          branch_policies+: [
+            "gh-pages"
+          ],
+          deployment_branch_policy: "selected",
+        },
+      ],
     },
     orgs.newRepo('Technology-Azure') {
       allow_rebase_merge: false,
@@ -326,6 +374,12 @@ orgs.newOrg('eclipse-edc') {
       ],
       environments: [
         orgs.newEnvironment('Azure-dev'),
+        orgs.newEnvironment('github-pages') {
+          branch_policies+: [
+            "gh-pages"
+          ],
+          deployment_branch_policy: "selected",
+        },
       ],
     },
     orgs.newRepo('Technology-Gcp') {
@@ -342,6 +396,14 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+      environments: [
+        orgs.newEnvironment('github-pages') {
+          branch_policies+: [
+            "gh-pages"
+          ],
+          deployment_branch_policy: "selected",
+        },
+      ],
     },
     orgs.newRepo('Technology-HuaweiCloud') {
       allow_rebase_merge: false,
@@ -372,6 +434,14 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "read",
       },
+      environments: [
+        orgs.newEnvironment('github-pages') {
+          branch_policies+: [
+            "gh-pages"
+          ],
+          deployment_branch_policy: "selected",
+        },
+      ],
     },
     orgs.newRepo('Template-Basic') {
       allow_rebase_merge: false,
