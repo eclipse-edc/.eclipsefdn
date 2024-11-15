@@ -435,7 +435,7 @@ orgs.newOrg('eclipse-edc') {
         },
       ],
       workflows+: {
-        default_workflow_permissions: "read",
+        default_workflow_permissions: "write",
       },
       environments: [
         orgs.newEnvironment('github-pages') {
