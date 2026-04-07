@@ -48,6 +48,12 @@ orgs.newOrg('technology.edc', 'eclipse-edc') {
     orgs.newOrgSecret('SWAGGERHUB_USER') {
       value: "********",
     },
+    orgs.newOrgSecret('REPO_TOKEN_USERNAME') {
+      value: "vault:technology.edc/repo.eclipse.org/token-username",
+    },
+    orgs.newOrgSecret('REPO_TOKEN_PASSWORD') {
+      value: "vault:technology.edc/repo.eclipse.org/token-password",
+    },
   ],
   _repositories+:: [
     orgs.newRepo('.github') {
