@@ -521,6 +521,7 @@ orgs.newOrg('technology.edc', 'eclipse-edc') {
       web_commit_signoff_required: false,
     },
     orgs.newRepo('Virtual-Connector') {
+      archived: true,
       allow_rebase_merge: false,
       allow_update_branch: false,
       delete_branch_on_merge: false,
