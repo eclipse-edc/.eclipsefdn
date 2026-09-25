@@ -385,6 +385,7 @@ orgs.newOrg('technology.edc', 'eclipse-edc') {
       ],
     },
     orgs.newRepo('Technology-HuaweiCloud') {
+      archived: true,
       allow_rebase_merge: false,
       allow_update_branch: false,
       delete_branch_on_merge: false,
@@ -436,6 +437,7 @@ orgs.newOrg('technology.edc', 'eclipse-edc') {
       },
     },
     orgs.newRepo('TrustFrameworkAdoption') {
+      archived: true,
       allow_rebase_merge: false,
       allow_update_branch: false,
       delete_branch_on_merge: false,
